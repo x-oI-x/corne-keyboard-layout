@@ -166,11 +166,6 @@
             key-positions = <7 11>;
             timeout-ms = <20>;
         };
-
-        macro1 {
-            bindings = <&new_macro>;
-            key-positions = <15 16 19 20>;
-        };
     };
 };
 
