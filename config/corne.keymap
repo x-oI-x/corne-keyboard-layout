@@ -166,10 +166,34 @@
             key-positions = <7 11>;
             timeout-ms = <20>;
         };
+
+        af {
+            bindings = <&kp EQUAL>;
+            key-positions = <4 3>;
+        };
+
+        asdf {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <7 8>;
+        };
+
+        combo1 {
+            bindings = <&new_macro>;
+            key-positions = <15 16 19 20>;
+        };
     };
 };
 
 / {
+    macros {
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp Y &kp P &kp E &kp SPACE &kp S &kp O &kp M &kp E &kp T &kp H &kp I &kp N &kp G &kp DOT &kp DOT &kp DOT &kp EXCL>;
+            label = "NEW_MACRO";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
