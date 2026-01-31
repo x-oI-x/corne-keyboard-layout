@@ -237,9 +237,9 @@
 
         adjust_layer {
             bindings = <
-&bootloader  &sys_reset    &out OUT_TOG  &none         &none         &none           &none         &none         &none         &out OUT_TOG  &sys_reset    &bootloader
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &bt BT_CLR
-&none        &kp KP_NUM    &none         &none         &none         &none           &none         &none         &none         &none         &none         &none
+&bootloader  &sys_reset    &out OUT_BLE  &none         &none         &none           &bt BT_NXT    &gresc        &none         &out OUT_TOG   &sys_reset     &bootloader
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_SEL 4  &bt BT_SEL 3  &bt BT_SEL 2  &bt BT_SEL 1   &bt BT_SEL 0   &trans
+&none        &kp KP_NUM    &none         &none         &none         &none           &none         &none         &none         &bt BT_DISC 1  &bt BT_DISC 0  &none
                                          &trans        &trans        &trans          &trans        &trans        &trans
             >;
         };
